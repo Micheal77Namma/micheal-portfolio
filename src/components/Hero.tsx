@@ -404,7 +404,7 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/files/Micheal Namma.pdf"
+              href={`${import.meta.env.BASE_URL}files/Micheal Namma.pdf`}
               download="Micheal Namma CV.pdf"
               className={classes.ghostBtn}
             >
