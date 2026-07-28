@@ -1,64 +1,9 @@
-import {
-  Box,
-  Stack,
-  Group,
-  Text,
-  Title,
-  Anchor,
-} from "@mantine/core";
+import { Box, Stack, Group, Text, Title, Anchor } from "@mantine/core";
 import { useReveal } from "../hooks/useReveal";
 import classes from "./Contact.module.css";
 
 export default function Contact() {
   const { ref, visible } = useReveal();
-
-  const socialLinks = [
-    {
-      name: "LinkedIn",
-      href: "https://www.linkedin.com/in/micheal-namma-8111231b9",
-      color: "#0A66C2",
-      icon: (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-        </svg>
-      ),
-    },
-    {
-      name: "Email",
-      href: "mailto:micheal1namma@gmail.com",
-      color: "rgb(9,79,183)",
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <rect x="2" y="4" width="20" height="16" rx="2" />
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-        </svg>
-      ),
-    },
-    {
-      name: "Phone",
-      href: "tel:+963945922364",
-      color: "#25D366",
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.77 11a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.68 0h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 5.29 5.29l1.28-1.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 14v2.92z" />
-        </svg>
-      ),
-    },
-  ];
 
   const contactInfo = [
     {
@@ -199,7 +144,7 @@ export default function Contact() {
             </Text>
           </Box>
 
-          <Box style={{ maxWidth: '560px', margin: '0 auto' }}>
+          <Box style={{ maxWidth: "560px", margin: "0 auto" }}>
             <Box
               style={{
                 opacity: visible ? 1 : 0,
@@ -207,22 +152,6 @@ export default function Contact() {
                 transition: "all 0.8s ease 0.2s",
               }}
             >
-              <Group gap="0.75rem" mb="2rem">
-                {socialLinks.map((s) => (
-                  <Anchor
-                    key={s.name}
-                    href={s.href}
-                    target={s.href.startsWith("http") ? "_blank" : undefined}
-                    rel="noopener noreferrer"
-                    title={s.name}
-                    className={classes.socialIcon}
-                    style={{ "--icon-color": s.color } as React.CSSProperties}
-                  >
-                    {s.icon}
-                  </Anchor>
-                ))}
-              </Group>
-
               <Stack gap="0.85rem" mb="2rem">
                 {contactInfo.map((c) => (
                   <Anchor
@@ -331,7 +260,6 @@ export default function Contact() {
                 </Text>
               </Box>
             </Box>
-
           </Box>
         </Box>
       </Box>
