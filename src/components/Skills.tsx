@@ -8,11 +8,10 @@ const skillGroups = [
     color: "rgba(9,79,183,0.15)",
     borderColor: "rgba(9,79,183,0.3)",
     skills: [
-      "PHP",
       "Laravel",
-      "Python",
+      "PHP",
+      "NestJS",
       "Microservices",
-      "Flask",
       "OOP",
       "REST APIs",
       "Magento 2",
@@ -63,11 +62,7 @@ const skillGroups = [
     icon: "🎯",
     color: "rgba(10, 31, 224, 0.2)",
     borderColor: "rgba(10, 31, 224, 0.2)",
-    skills: [
-      "Agile/Scrum",
-      "Jira Sprint Planning",
-      "FinTech Security Standards",
-    ],
+    skills: ["Agile/Scrum", "Jira Sprint Planning", "FinTech"],
   },
 ];
 

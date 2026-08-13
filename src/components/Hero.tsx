@@ -361,18 +361,17 @@ export default function Hero() {
               transition: "all 0.7s ease 0.55s",
             }}
           >
-            Back-end developer specializing in{" "}
+            Back-end developer with extensive expertise in{" "}
             <strong style={{ color: "rgba(255,255,255,0.8)" }}>Laravel</strong>{" "}
-            &amp;{" "}
-            <strong style={{ color: "rgba(255,255,255,0.8)" }}>PHP</strong> with
-            experience in{" "}
-            <strong style={{ color: "rgba(255,255,255,0.8)" }}>
-              Python microservices
-            </strong>{" "}
-            and FinTech systems. Dedicated to architecting scalable APIs,
-            optimizing complex database schemas, and building robust data
-            layers. Proven ability to collaborate closely with front-end teams
-            to deliver seamlessly integrated, secure web applications.
+            and <strong style={{ color: "rgba(255,255,255,0.8)" }}>PHP</strong>,
+            dedicated to architecting scalable APIs, optimizing complex database
+            schemas, and building robust data layers. Proven ability to
+            collaborate closely with front-end teams to deliver seamlessly
+            integrated, secure web applications, complemented by intermediate
+            proficiency in{" "}
+            <strong style={{ color: "rgba(255,255,255,0.8)" }}>NestJS</strong>{" "}
+            and a foundational understanding of{" "}
+            <strong style={{ color: "rgba(255,255,255,0.8)" }}>Vue.js</strong>.
           </Text>
 
           <Group
